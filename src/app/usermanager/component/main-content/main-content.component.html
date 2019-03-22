@@ -1,0 +1,27 @@
+<p>
+  main-content works!
+</p>
+<div *ngIf="!user">
+  <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="user">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h3>{{ user.name }}</h3>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list role="list">
+        <label>Address : </label>
+        <mat-list-item role="listitem">{{user.address.street}} {{user.address.suite}} {{user.address.zipcode}} {{user.address.city}} {{user.address.geo.lat}} {{user.address.geo.lng}}</mat-list-item>
+        <label>Company : </label>
+        <mat-list-item role="listitem">{{user.company.name}}</mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    <hr>
+    <mat-card-footer>
+      <p>Visit our website : {{user.website}} </p>
+    </mat-card-footer>
+  </mat-card>
+</div>

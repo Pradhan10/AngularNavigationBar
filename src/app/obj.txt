@@ -1,0 +1,22 @@
+```==============================
+Exercise 2: Navigation bar
+==============================
+
+- Create an angular 6 app using angular CLI.
+
+here is a sample data set: https://jsonplaceholder.typicode.com/users
+
+a) create a navigation bar using angular material displaying the list of users - username is the nav item name
+
+b) clicking on any item would display the selected user details in a card (use flexbox css)
+
+------------
+card header - Username
+------------
+user details:
+Company Name:
+Address:
+...
+-------------
+card-footer - Website
+-------------
